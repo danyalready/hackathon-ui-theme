@@ -17,10 +17,10 @@ type Values = {
 };
 
 type FormProps = {
-    onSubmit?: (values: Values) => void;
+    onChange?: (values: Values) => void;
 };
 
-const Form = ({ onSubmit }: FormProps) => {
+const Form = ({ onChange }: FormProps) => {
     const [themeColor, setThemeColor] = useState('#ffeb3b');
     const [brand1, setBrand1] = useState('#5dc99b');
     const [brand2, setBrand2] = useState('#f8f8f8');
@@ -42,7 +42,7 @@ const Form = ({ onSubmit }: FormProps) => {
 
         values.bgColor = bgColor;
 
-        onSubmit?.(values);
+        onChange?.(values);
         // eslint-disable-next-line
     }, [themeColor, brand1, brand2, brand3, bgColor]);
 
