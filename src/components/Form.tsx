@@ -22,9 +22,9 @@ type FormProps = {
 
 const Form = ({ onSubmit }: FormProps) => {
     const [themeColor, setThemeColor] = useState('#ffeb3b');
-    const [brand1, setBrand1] = useState('#ffffff');
-    const [brand2, setBrand2] = useState('#ffffff');
-    const [brand3, setBrand3] = useState('#ffffff');
+    const [brand1, setBrand1] = useState('#9131a2');
+    const [brand2, setBrand2] = useState('#ff492c');
+    const [brand3, setBrand3] = useState('#5dc99b');
     const [bgColor, setBgColor] = useState('#5d5adc');
 
     useEffect(() => {
