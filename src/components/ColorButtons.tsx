@@ -12,7 +12,8 @@ const RadioCard = (props: any) => {
             <Box
                 {...checkbox}
                 cursor='pointer'
-                bgColor={props.children}
+                bgColor={props.children !== 'custom' && props.children}
+                bgImage={props.children === 'custom' ? 'linear-gradient(30deg, #ffeb3b, #e91e63, #5d5adc)' : 'none'}
                 w='25px'
                 h='25px'
                 borderRadius='50%'
