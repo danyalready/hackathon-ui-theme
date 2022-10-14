@@ -44,7 +44,7 @@ const Form = ({ onSubmit }: FormProps) => {
 
         onSubmit?.(values);
         // eslint-disable-next-line
-    }, [themeColor, bgColor]);
+    }, [themeColor, brand1, brand2, brand3, bgColor]);
 
     return (
         <Box fontFamily="Inter, sans-serif, NotoColorEmojiLimited, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'">

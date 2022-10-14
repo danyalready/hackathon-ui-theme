@@ -5,7 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 function App() {
     return (
         <ChakraProvider>
-            <Form />
+            <Form onSubmit={console.log} />
         </ChakraProvider>
     );
 }
